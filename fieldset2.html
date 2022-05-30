@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>formulaire avec fieldset</title>
+</head>
+<body>
+	<h1>Gestion d'un Formulaire</h1>
+	<form method="post" action="traitement.php">
+		<fieldset style="border: 2px solid red;">
+			<legend>Veuillez remplir le formulaire</legend>
+			<label>Nom : </label>
+			<input type="text" name="Nom"><br><br>
+
+			<label>Prenom : </label>
+			<input type="text" name="Prenom"><br><br>
+
+			<label>E-Mail : </label>
+			<input type="text" name="E-Mail"><br><br>
+
+			<label>Mot de Passe : </label>
+			<input type="password" name="password"><br><br>
+
+			<label>De Quel Pays etes-Vous ? </label><br><br>
+			<input type="radio" name="pays" value="France">France<br><br>
+			<input type="radio" name="pays" value="Senegal">Senegal<br><br>
+			<input type="radio" name="pays" value="Espagne">Espagne<br><br>
+			<input type="radio" name="pays" value="RCA">RCA<br><br><br><br>
+
+		<label>Etes-Vous un Homme ou une Femme </label><br><br>
+		<select name="sexe">
+			<option value="Homme">Homme</option>
+			<option value="Femme">Femme</option>
+			<option value="Autre">Autre</option>
+</select><br>
+
+<br><label>Commentaire : </label><br>
+<textarea rows="10" cols="50" style="border: 2px solid green;"></textarea><br>
+<br><input type="submit" name="Envoyer"><br>
+</fieldset>
+</form>
+<br><br>
+<a href="fieldset1.html" target="_parent"> Retour vers la page d'Accueil</a>
+</body>
+</html>

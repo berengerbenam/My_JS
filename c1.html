@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+       <title>Calculatrice</title>
+          <meta charset="utf-8">
+          <script type="text/javascript">
+ 
+          function log(data) {
+          console.log(data)
+          }
+ 
+          function byId(id) {
+          return document.getElementById(id);
+          }
+ 
+          function init() {
+ 
+          function add(a, b) {
+          return parseFloat(a) + parseFloat(b);
+          }
+ 
+          function sub(a, b) {
+          return parseFloat(a) - parseFloat(b);
+          }
+ 
+          function div(a, b) {
+          return parseFloat(a) / parseFloat(b);
+          }
+ 
+          function mult(a, b) {
+          return parseFloat(a) * parseFloat(b);
+          }
+ 
+          function displayResult() {
+ 
+          getResult(byId('nb1').value, byId('nb2').value, byId('valeur').value);
+ 
+          function getResult(a, b, operateur) {
+            if (operateur == '+') { // si +
+              var value = add(a,b);
+              byId('resultat').innerHTML = value;
+            }
+            else if (operateur == '-') { // si -
+              var value = sub(a,b);
+              byId('resultat').innerHTML = value;
+            }
+            else if (operateur == '/') { // si /
+              var value = div(a,b);
+              byId('resultat').innerHTML = value;
+            }
+            else if (operateur == '*') { // si *
+              var value = mult(a,b);
+              byId('resultat').innerHTML = value;
+            }
+            else if (isNaN(a) || isNaN(b)) {
+              alert('Veuillez entrer des nombres');
+            }
+          }
+        }
+ 
+        function compute(a, b) {
+          var nb1 = Number(a); // chiffre a
+          var nb2 = Number(b); // chiffre b
+          var operateur = ''; // operateur
+          }
+  
+      }
+ 
+ 
+          </script>
+  </head>
+  <body onload="init();">
+    <input type="text" id="nb1">                                                    <!-- premiere valeur -->
+ 
+    <select id="valeur">                                                            <!-- operateur -->
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+ 
+    <input type="text" id="nb2">                                                    <!-- deuxieme valeur -->
+ 
+    <input id="resultat" type="submit" value="=" onclick="displayResult()">         <!-- bouton action resultat -->
+ 
+ 
+    <input name="ecran" size="15" value="0" width="100%" id="resultat">             <!-- affichage resultat -->
+ 
+    <input id="reset" type="reset" value="C" onclick="this.form.reset();">          <!-- reset affichage -->
+ 
+  </body>
+</html>
