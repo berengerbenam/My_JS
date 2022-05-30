@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Demo JS</title>
+</head>
+
+<body>
+	<script>
+		let code = prompt("Quel est le code de votre opérateur ?");
+		if (code == '70') {
+			alert('Expresso');
+		}
+		else if (code == '75') {
+			alert('ProMobile');
+		}
+		else if (code == '76') {
+			alert('Free');
+		}
+		else if (code == '77' || code == '78') {
+			alert('Orange');
+		}
+		else {
+			alert('Opérateur inconnu');
+		}
+
+		// Méthode avec Swith
+
+		let code = prompt("Quel est le code de votre opérateur ?");
+		switch (code) {
+			case '70':
+				alert('Expresso');
+				break;
+			case '75':
+				alert('ProMobile');
+				break;
+			case '76':
+				alert('Free');
+				break;
+			case '77': case '78':
+				alert('Orange');
+				break;
+			default:
+				alert('Opérateur inconnu');
+		}
+	</script>
+</body>
+
+</html>

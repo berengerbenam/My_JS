@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Listes liées</title>
+	<script src="listes-liees.txt"></script>
+</head>
+<body>
+	<h1>Bibliothèque en ligne</h1>
+	<form>
+		<fieldset>
+			<legend>Bibliothèque EC2LT</legend>
+			<select id="auteurs" onchange="chargerLivres()">
+				<option value="aucun">Choisissez un auteur</option>
+				<option value="mariama">Mariama Ba</option>
+				<option value="bodian">Seydou Bodian</option>
+				<option value="sembene">Ousmane Sembène</option>
+			</select>
+			<select id="livres">
+				<option>Choisissez un ouvrage</option>
+			</select>
+		</fieldset>
+	</form>
+</body>
+</html>

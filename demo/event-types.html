@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Les évènements JS</title>
+	<script>
+		function showBorders() {
+			myP.style = 'border : solid crimson 3px';
+		}
+		function hideBorders() {
+			myP.style = 'border : none';
+		}
+		function augmenterImage() {
+			monImage.src = '../images/un.jpeg';
+			monImage.height = '400';
+			monImage.width = '400';
+		}
+		function diminuerImage() {
+			monImage.src = '../images/blackness.jpg';
+			monImage.height = '300';
+			monImage.width = '300';
+		}
+	</script>
+</head>
+<!-- <body onload="alert('Page chargée');"> -->
+<body>
+	<h1>Les évènements JS</h1>
+	<label>Prénom</label>
+	<input 
+		type="text" name="prenom" id="prenom"
+		onfocus="console.log('Focus sur prenom');"
+		onblur="console.log('Blur sur prenom');"
+	>
+	<label>Nom</label>
+	<input 
+		type="text" name="nom" id="nom"
+		onfocus="console.log('Focus sur nom');"
+		onblur="console.log('Blur sur nom');"
+	>
+	<input type="button" value="Envoyer">
+	<p id="myP" onmouseover="showBorders()" onmouseout="hideBorders()" on>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea perferendis, est id harum vel repellat nobis rerum aspernatur. Vitae consectetur velit rerum quia, officiis laborum fugit cumque aspernatur consequatur ullam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni consequatur praesentium, officia consectetur laboriosam quisquam, illo quaerat nemo quam minus recusandae assumenda laudantium, aspernatur sint nulla? Ducimus repudiandae aliquid numquam!
+	</p>
+	<p>
+		<img 
+			src="../images/blackness.jpg" id="monImage" width="300" height="300"
+			onmouseover="augmenterImage()"
+			onmouseout="diminuerImage()"
+		>
+	</p>
+</body>
+</html>

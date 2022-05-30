@@ -1,0 +1,31 @@
+body
+{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+h1, div
+{
+	font-family: "Poiret One";
+	font-size: 2.5em;
+	text-align: center;
+}
+div
+{
+	position: absolute;
+	left: 25%;
+	height: 70%;
+	width: 50%;
+}
+div img
+{
+	height: 100%;
+	border: double grey 5px;
+	border-radius: 15%;
+}
+div p
+{
+	margin: 5px;
+}
+button 
+{
+	color: red;
+}

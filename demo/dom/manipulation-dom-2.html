@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function hideParagraph() {
+			let paragraphes = document.getElementsByTagName('p');
+
+			let codeCss = `
+				background-color: yellow;
+				border: solid crimson 5px;
+				padding: 10px;
+				line-height: 1.5;
+				text-align: justify;
+			`;
+			for (let i = 0; i < paragraphes.length; i++) 
+			{
+				// paragraphes[i].style = 'background-color : yellow; ';
+				paragraphes[i].style = codeCss;
+			}
+		}
+	</script>
+</head>
+<body>
+	<button onclick="hideParagraph()">Masquer</button>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique explicabo quam, nemo dicta minus tempore architecto. Expedita reprehenderit magnam molestiae? Ipsum repellendus odio praesentium? Accusamus earum nihil officiis ipsam temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis error libero eveniet numquam accusantium, quos necessitatibus nobis, nam id totam ipsa nostrum voluptate illum laboriosam illo omnis, quod nisi eos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laudantium sed, vitae in ducimus perferendis. Quae laboriosam incidunt earum consequuntur qui doloremque eligendi repellat atque eos reprehenderit. Fugiat, hic mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus sunt facilis, suscipit delectus quidem vitae, rerum modi officia similique autem nobis. Reiciendis esse suscipit totam adipisci voluptatibus, perspiciatis velit placeat.</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique explicabo quam, nemo dicta minus tempore architecto. Expedita reprehenderit magnam molestiae? Ipsum repellendus odio praesentium? Accusamus earum nihil officiis ipsam temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis error libero eveniet numquam accusantium, quos necessitatibus nobis, nam id totam ipsa nostrum voluptate illum laboriosam illo omnis, quod nisi eos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laudantium sed, vitae in ducimus perferendis. Quae laboriosam incidunt earum consequuntur qui doloremque eligendi repellat atque eos reprehenderit. Fugiat, hic mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus sunt facilis, suscipit delectus quidem vitae, rerum modi officia similique autem nobis. Reiciendis esse suscipit totam adipisci voluptatibus, perspiciatis velit placeat.</p>
+	<div>Aladji Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptates in temporibus earum vel eaque aspernatur, molestiae rem quasi, ratione sed quisquam esse illum placeat consequatur dolorem optio architecto? Deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique rem quis repudiandae nisi unde, culpa, fuga incidunt vel ducimus quod non voluptate in cum ratione consequatur ullam dolorum vero accusantium?</div>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique explicabo quam, nemo dicta minus tempore architecto. Expedita reprehenderit magnam molestiae? Ipsum repellendus odio praesentium? Accusamus earum nihil officiis ipsam temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis error libero eveniet numquam accusantium, quos necessitatibus nobis, nam id totam ipsa nostrum voluptate illum laboriosam illo omnis, quod nisi eos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laudantium sed, vitae in ducimus perferendis. Quae laboriosam incidunt earum consequuntur qui doloremque eligendi repellat atque eos reprehenderit. Fugiat, hic mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus sunt facilis, suscipit delectus quidem vitae, rerum modi officia similique autem nobis. Reiciendis esse suscipit totam adipisci voluptatibus, perspiciatis velit placeat.</p>
+	<div>Aladji Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptates in temporibus earum vel eaque aspernatur, molestiae rem quasi, ratione sed quisquam esse illum placeat consequatur dolorem optio architecto? Deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique rem quis repudiandae nisi unde, culpa, fuga incidunt vel ducimus quod non voluptate in cum ratione consequatur ullam dolorum vero accusantium?</div>
+</body>
+</html>

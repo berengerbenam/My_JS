@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Exercice 3 - Question 4</title>
+	<script>
+		function changerCouleur(couleur) {
+			document.bgColor = couleur;
+		}
+	</script>
+</head>
+
+<body>
+	<form>
+		<fieldset>
+			<legend>Couleur de fond de la page</legend>
+			<label for="couleur">Choisir une couleur</label>
+			<select id="couleur" onchange="changerCouleur(this.value)">
+				<option value="white">Aucun</option>
+				<option value="green">Vert</option>
+				<option value="yellow">Jaune</option>
+				<option value="red">Rouge</option>
+				<option value="blue">Bleu</option>
+			</select>
+		</fieldset>
+	</form>
+</body>
+
+</html>

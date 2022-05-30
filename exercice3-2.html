@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exercice 3 - Question 1</title>
+	<script>
+		function showData() 
+		{
+			if (nom.value != '' && prenom.value != '' && age.value != '') 
+			{
+				let message = "Nom : " + nom.value + "\n";
+				message += "Prénom : " + prenom.value + "\n";
+				message += "Age : " + age.value;
+
+				alert(message);
+			}
+			else 
+			{
+				alert("Erreur : vous devez remplir tous les champs");
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<form>
+		<fieldset>
+			<legend>Identification</legend>
+			<label for="nom">Nom</label><br>
+			<input type="text" id="nom"><br>
+			<label for="nom">Prénom</label><br>
+			<input type="text" id="prenom"><br>
+			<label for="age">Age</label><br>
+			<input type="number" id="age"><br><br>
+			<input type="button" value="Enregistrer" onclick="showData()">
+		</fieldset>
+	</form>
+</body>
+
+</html>

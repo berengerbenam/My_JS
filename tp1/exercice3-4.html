@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Exercice 3 - Question 4</title>
+	<script>
+		function changerCouleur() 
+		{
+			switch (couleur.value) 
+			{
+				case 'Vert':
+					document.bgColor = 'green';
+					break;
+				case 'Jaune':
+					document.bgColor = 'yellow';
+					break;
+				case 'Rouge':
+					document.bgColor = 'red';
+					break;
+				case 'Bleu':
+					document.bgColor = 'blue';
+					break;
+				default:
+					document.bgColor = 'white';
+					break;
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<form>
+		<fieldset>
+			<legend>Couleur de fond de la page</legend>
+			<label for="couleur">Choisir une couleur</label>
+			<select id="couleur" onchange="changerCouleur()">
+				<option>Aucun</option>
+				<option>Vert</option>
+				<option>Jaune</option>
+				<option>Rouge</option>
+				<option>Bleu</option>
+			</select>
+		</fieldset>
+	</form>
+</body>
+
+</html>

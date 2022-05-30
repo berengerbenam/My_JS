@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>formulaire</title>
+    <link rel="stylesheet" type="text/css" href="formulaire.css">
+    <link rel="stylesheet" type="text/css" href="webfonts/all.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="header">
+        </div>
+        <form id="form" class="form">
+            <font color="#B22222" size="5">
+                <h1>Création de Formulaire </h1>
+            </font>
+            <fieldset style="border: 8px solid green;">
+            <legend>Inscription</legend>
+            <div class="form-control">
+                <label for="username">Sexe : </label>
+                <input type="radio" name="a@florin-pop.com" id="radio"/>Masculin
+                <input type="radio" name="a@florin-pop.com" id="radio"/> Féminin<br>
+                <!--input type="text" placeholder="florinpop17" id="username" /-->
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+            </div>
+
+            <div class="form-control">
+                <label for="username">Nom : </label>
+                <input type="nom" placeholder="a@florin-pop.com" id="nom" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="username">Prénom :</label>
+                <input type="prenom" placeholder="Prenom" id="prenom" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="username">Age :</label>
+                <input type="age" placeholder="age" id="age" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="username">Pseudo :</label>
+                <input type="pseudo" placeholder="Pseudo" id="pseudo" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="username">Mot de passe :</label>
+                <input type="mdp" placeholder="mot de passe" id="mdp" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="username">mot de passe(confirmation) : </label>
+                <input type="mdp1" placeholder="mot de passe(confirmation)" id="mdp1" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Séléctionner votre pays : </label>
+            <select>
+                <option>choisir votre pays</option>
+                <option>senegal</option>
+                <option>Comores</option>
+                <option>Guine</option>
+                <option>Mali</option>
+                <option>Centrafrique</option>
+                <option>Moritanie</option>
+                <option>Congo</option>
+            </select> <br>
+            Recevoir des mails <input type="checkbox" name=""><br><br>
+            <input type="submit" value="Envoyer">
+            </div>
+            </fieldset>
+
+        </form>
+    </div>
+    <script src="formul.js"></script>
+</body>
+
+</html>

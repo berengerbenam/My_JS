@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Exercice 1 - Question 5</title>
+</head>
+
+<body>
+	<script>
+		let login, password;
+
+		do {
+			login = prompt('Veuillez renseigner votre login');
+			password = prompt('Veuillez renseigner votre password');
+
+			if (login !== 'administrateur' || password !== 'passer') {
+				alert('Login et/ou mot de passe incorrect');
+			}
+			else {
+				alert("Bienvenue dans la page d'administration");
+			}
+		} while (login !== 'administrateur' || password !== 'passer');
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS Events</title>
+	<script>
+		function calculCarre() 
+		{
+			let carre = nombre.value * nombre.value;
+			// alert('Le carré du nombre vaut : ' + carre);
+			resultat.innerHTML = 'Le carré du nombre vaut : ' + carre;
+		}
+	</script>
+</head>
+<body>
+	<label>Nombre</label>
+	<input type="number" id="nombre" value="0">
+	<input type="button" value="Calculer carré" onclick="calculCarre();">
+	<label id="resultat">Le carré du nombre vaut : 0</label>
+</body>
+</html>

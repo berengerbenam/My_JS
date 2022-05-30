@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function calculerPgdc() {
+			/* let minimum;
+			if(nombre2.value < nombre1.value){
+				minimum = nombre2.value;
+			}
+			else 
+			{
+				minimum = nombre1.value;
+			} */
+			
+			let pgdc = 1;
+			let minimum = Math.min(nombre1.value, nombre2.value);
+
+			for (let diviseurPotentiel = 2; diviseurPotentiel <= minimum; diviseurPotentiel++) 
+			{
+				if (nombre1.value % diviseurPotentiel == 0 && nombre2.value % diviseurPotentiel == 0) 
+				{
+					pgdc = diviseurPotentiel;
+				}
+			}
+			
+			resultat.innerHTML = 'PGDC = ' + pgdc;
+
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<label for="nombre1">Nombre 1</label>
+		<input type="number" id="nombre1">
+		<label for="nombre2">Nombre 2</label>
+		<input type="number" id="nombre2">
+		<input type="button" value="PGDC" onclick="calculerPgdc()">
+		<label id="resultat"></label>
+	</form>
+</body>
+</html>

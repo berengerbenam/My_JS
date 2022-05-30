@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conjugaison au présent</title>
+</head>
+<body>
+	<script>
+		let verbe = prompt('Veuillez renseigner le verbe');
+		
+		verbe = verbe.toLowerCase(); // mettre le verbe en minuscule
+
+		if (verbe.endsWith('er')) 
+		{
+			const voyelles = ['a', 'o', 'i', 'u', 'e', 'é'];
+
+			const radical = verbe.substring(0, verbe.length-2);
+			
+			document.write(`<h1>Conjugaison de ${verbe} au présent</h1>`);
+			
+			if (voyelles.includes(verbe.charAt(0))) 
+			{
+				document.write(`J'${radical}e <br>`);
+			}
+			else
+			{
+				document.write(`Je ${radical}e <br>`);
+			}
+			document.write(`Tu ${radical}es <br>`);
+			document.write(`Il/Elle ${radical}e <br>`);
+			document.write(`Nous ${radical}ons <br>`);
+			document.write(`Vous ${radical}ez <br>`);
+			document.write(`Ils/Elles ${radical}ent <br>`);
+		}
+		else
+		{
+			document.write('Le verbe fourni n\'est pas du premier groupe');
+		}
+	</script>
+</body>
+</html>
